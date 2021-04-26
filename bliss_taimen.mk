@@ -1,6 +1,5 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2880
-TARGET_SCREEN_WIDTH := 1440
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
@@ -20,6 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
     PRIVATE_BUILD_DESC="taimen-user 11 RP1A.201005.004.A1 6934943 release-keys"
 
-BUILD_FINGERPRINT := google/taimen/taimen:11/RP1A.201005.004.A1/6934943:user/release-keys
+BUILD_FINGERPRINT := google/taimen/taimen:11/RQ2A.210405.005/7181113:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
